@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.carousel-item img {
+    width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 40%;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+}
+
+.carousel-caption h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.carousel-caption p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    z-index: 1;
+}
+
+.carousel-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.carousel-buttons button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        bottom: 20%;
+        max-width: 90%;
+    }
+
+    .carousel-buttons {
+        flex-direction: column;
+        padding: 10px;
+    }
+}

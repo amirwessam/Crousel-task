@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/image1.jpeg" alt="Slide 1">
+                <div class="carousel-caption">
+                    <h3>Budapest, Hungary.</h3>
+                    <p>In the heart of Budapest, Hungary, the majestic Chain Bridge spans the Danube River, connecting the historic Buda and vibrant Pest districts, offering a glimpse into the city's rich history and cultural heritage.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/image2.jpeg" alt="Slide 2">
+                <div class="carousel-caption">
+                    <h3>London, England.</h3>
+                    <p>In the bustling metropolis of London, the iconic London Eye offers panoramic views of the city's skyline, providing an unforgettable perspective on the vibrant energy and cultural diversity that define this global capital.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/image3.jpeg" alt="Slide 3">
+                <div class="carousel-caption">
+                    <h3>Venice, Italy.</h3>
+                    <p>Venice, a city of enchanting waterways and timeless beauty, beckons travelers to wander its labyrinthine streets and discover its romantic allure amidst the gondolas and historic architecture.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" onclick="prevSlide()">&#10094;</a>
+        <a class="carousel-control-next" onclick="nextSlide()">&#10095;</a>
+    </div>
+    <div class="carousel-buttons">
+        <button onclick="goToSlide(0)" class="selected">Budapest, Hungary</button>
+        <button onclick="goToSlide(1)">London, England</button>
+        <button onclick="goToSlide(2)">Venice, Italy</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
